@@ -22,5 +22,24 @@ This playground project contains a default setup including:
 | service-a           | Spring Boot application          | 8080 |
 | service-b           | Spring Boot application          | 8081 |
 
+## How to build the projects?
 
+1. First pick a branch.
 
+2. Run the Maven build
+
+```
+./mvnw clean package
+```
+
+3. To build the Docker / OCI images for all applications run:
+
+```
+./build-images.sh
+```
+
+## How to run the project
+
+```
+docker-compose up -d
+```
