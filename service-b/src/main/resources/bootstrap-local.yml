@@ -1,0 +1,25 @@
+spring:
+  profiles: local
+  cloud:
+    config:
+      # For local development we are running the config server and service registry in Docker
+      # but run service-b in our IDEA.
+      #
+      # We have to disable to resolve the config server via Eureka.
+      # Because when going via the Service Registry to resolve the config server we will get the
+      # docker internal ip address (on Windows and Mac OS) of the config server running in Docker.
+      #
+      # The local running application isn't running in Docker and can't reach the
+      # internal ip of the config server.
+      #
+      # So to work around this issue we disable the discovery and go straight to the config server
+      # that is running in Docker will is exposing it's port 8888 on the machine and is reachable
+      # by the application running on in the IDEA on the machine.
+      discovery:
+        enabled: false
+      uri: http://localhost:8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

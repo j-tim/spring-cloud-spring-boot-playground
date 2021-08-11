@@ -1,0 +1,7 @@
+management:
+
+  # Expose default monitoring endpoints
+  endpoints:
+    web:
+      exposure:
+        include: "*"
