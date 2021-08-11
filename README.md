@@ -11,7 +11,7 @@ This playground project contains a default setup including:
 |---------------------|-------------------------|----------------------------------------------------|
 | 2.5                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.3-spring-boot-2.5.x              |
 | 2.4                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.3-spring-boot-2.4.x              |
-| 2.3                 | Hoxton SR 6             | spring-cloud-hoxton-sr6-spring-boot-2.3.x          |
+| 2.3                 | Hoxton SR 12            | spring-cloud-hoxton-sr12-spring-boot-2.3.x         |
 
 ## Applications and ports
 
@@ -25,6 +25,10 @@ This playground project contains a default setup including:
 ## How to build the projects?
 
 1. First pick a branch.
+
+```
+git checkout <branch-name>
+```
 
 2. Run the Maven build
 
