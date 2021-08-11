@@ -7,11 +7,11 @@ This playground project contains a default setup including:
 
 ## Spring Boot & Spring Cloud versions
 
-| Spring Boot version | Spring Cloud version    | Branch    |
-|---------------------|-------------------------|-----------|
-| 2.5                 | 2020.0.3 (aka Ilford)   |           |
-| 2.4                 | 2020.0.0 (aka Ilford)   |           |
-| 2.3                 | Hoxton SR 6             |           |
+| Spring Boot version | Spring Cloud version    | Branch                                             |
+|---------------------|-------------------------|----------------------------------------------------|
+| 2.5                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.3-spring-boot-2.5.x              |
+| 2.4                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.3-spring-boot-2.4.x              |
+| 2.3                 | Hoxton SR 6             | spring-cloud-hoxton-sr6-spring-boot-2.3.x          |
 
 ## Applications and ports
 
