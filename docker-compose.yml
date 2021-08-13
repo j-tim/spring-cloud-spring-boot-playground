@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+
+  config-server:
+    image: jtim/spring-cloud-playground/config-server:boot-2.4.x-ilford
+    container_name: config-server
+    environment:
+      SPRING_CLOUD_EUREKA_URI: http://service-registry:8761/eureka/
+      TZ: ${TZ}
+    ports:
+      - 8888:8888
+    depends_on:
+      - service-registry
+
+  service-registry:
+    image: jtim/spring-cloud-playground/service-registry:boot-2.4.x-ilford
+    container_name: service-registry
+    environment:
+      TZ: ${TZ}
+    ports:
+      - 8761:8761
+
+  service-a:
+    image: jtim/spring-cloud-playground/service-a:boot-2.4.x-ilford
+    container_name: service-a
+    environment:
+      SPRING_CLOUD_EUREKA_URI: http://service-registry:8761/eureka/
+      TZ: ${TZ}
+    ports:
+      - 8080:8080
+    depends_on:
+      - service-registry
+
+  service-b:
+    image: jtim/spring-cloud-playground/service-b:boot-2.4.x-ilford
+    container_name: service-b
+    environment:
+      SPRING_PROFILES_ACTIVE: container
+      SPRING_CLOUD_EUREKA_URI: http://service-registry:8761/eureka/
+      TZ: ${TZ}
+    ports:
+      - 8081:8081
+    depends_on:
+      - service-registry

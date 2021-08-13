@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    # For this example we run the native profile
+    # which enables the 'File system backend'.
+    #
+    # https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_file_system_backend
+    include: native
+
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: 'classpath:/config, classpath:/config/services/{application}'
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: ${SPRING_CLOUD_EUREKA_URI:http://localhost:8761/eureka/}

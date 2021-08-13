@@ -1,0 +1,4 @@
+info:
+  application:
+    description: Service B
+    name: ${spring.application.name}

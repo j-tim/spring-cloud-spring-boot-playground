@@ -1,0 +1,10 @@
+spring:
+  config:
+    import: configserver:http://localhost:8888
+
+  cloud:
+    config:
+      # https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_spring_cloud_config_client
+      discovery:
+        # Disable and resolve the config server directly
+        enabled: false
