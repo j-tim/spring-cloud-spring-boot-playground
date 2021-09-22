@@ -18,6 +18,7 @@
 		<module>service-a</module>
 		<module>service-b</module>
 		<module>service-registry</module>
+		<module>spring-boot-admin</module>
 	</modules>
 
 </project>

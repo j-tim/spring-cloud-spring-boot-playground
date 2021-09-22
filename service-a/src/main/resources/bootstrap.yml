@@ -24,3 +24,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${SPRING_CLOUD_EUREKA_URI:http://localhost:8761/eureka/}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

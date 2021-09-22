@@ -2,3 +2,4 @@
 ./mvnw -pl service-a spring-boot:build-image
 ./mvnw -pl service-b spring-boot:build-image
 ./mvnw -pl service-registry spring-boot:build-image
+./mvnw -pl spring-boot-admin spring-boot:build-image
