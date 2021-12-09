@@ -11,6 +11,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<java.version>1.8</java.version>
+		<image.tag>boot-2.5.x-cloud-2020.0.4</image.tag>
 	</properties>
 
 	<modules>
