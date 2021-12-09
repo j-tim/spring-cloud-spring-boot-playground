@@ -43,3 +43,14 @@ services:
       - 8081:8081
     depends_on:
       - service-registry
+
+  spring-boot-admin:
+    image: jtim/spring-cloud-playground/spring-boot-admin:boot-2.5.x-ilford
+    container_name: spring-boot-admin
+    environment:
+      SPRING_CLOUD_EUREKA_URI: http://service-registry:8761/eureka/
+      TZ: ${TZ}
+    ports:
+      - 8082:8082
+    depends_on:
+      - service-registry

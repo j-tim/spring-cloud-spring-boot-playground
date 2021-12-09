@@ -3,24 +3,26 @@
 This playground project contains a default setup including:
 * Spring Cloud Netflix Eureka
 * Spring Cloud Config server
-* Spring Boot Boot applications
+* Spring Boot applications
+* Spring Boot Admin
 
 ## Spring Boot & Spring Cloud versions
 
 | Spring Boot version | Spring Cloud version    | Branch                                             |
 |---------------------|-------------------------|----------------------------------------------------|
-| 2.5                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.0.3-spring-boot-2.5.x              |
-| 2.4                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.0.3-spring-boot-2.4.x              |
+| 2.5                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.0.3-spring-boot-2.5.x            |
+| 2.4                 | 2020.0.3 (aka Ilford)   | spring-cloud-2020.0.3-spring-boot-2.4.x            |
 | 2.3                 | Hoxton SR 12            | spring-cloud-hoxton-sr12-spring-boot-2.3.x         |
 
 ## Applications and ports
 
-| Application         | Details                          | Port |
-|---------------------|----------------------------------|------|
-| config-server       | Spring Cloud Config Server       | 8888 |
-| service-registry    | Spring Cloud Netflix Eureka      | 8761 |
-| service-a           | Spring Boot application          | 8080 |
-| service-b           | Spring Boot application          | 8081 |
+| Application       | Details                     | Port |
+|-------------------|-----------------------------|------|
+| config-server     | Spring Cloud Config Server  | 8888 |
+| service-registry  | Spring Cloud Netflix Eureka | 8761 |
+| service-a         | Spring Boot application     | 8080 |
+| service-b         | Spring Boot application     | 8081 |
+| spring-boot-admin | Spring Boot Admin           | 8082 |
 
 ## How to build the projects?
 
