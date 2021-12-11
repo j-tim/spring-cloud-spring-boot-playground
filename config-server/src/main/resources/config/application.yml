@@ -5,3 +5,7 @@ management:
     web:
       exposure:
         include: "*"
+
+info:
+  application:
+    name: ${spring.application.name}
