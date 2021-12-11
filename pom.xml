@@ -4,14 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>spring-cloud-2020.x-config-issue</artifactId>
+	<artifactId>spring-cloud-spring-boot-playground</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-2020.x-config-issue</name>
+	<name>spring-cloud-spring-boot-playground</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>pom</packaging>
 	<properties>
 		<java.version>1.8</java.version>
-		<image.tag>boot-2.5.x-cloud-2020.0.4</image.tag>
 	</properties>
 
 	<modules>
