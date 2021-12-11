@@ -10,6 +10,7 @@ This playground project contains a default setup including:
 
 | Spring Boot version | Spring Cloud version  | Branch                                     |
 |---------------------|-----------------------|--------------------------------------------|
+| 2.6.1 and later     | 2021.0.0              | spring-cloud-2021.0.0-spring-boot-2.6.x    |
 | 2.5                 | 2020.0.4              | spring-cloud-2020.0.4-spring-boot-2.5.x    |
 | 2.5                 | 2020.0.3 (aka Ilford) | spring-cloud-2020.0.3-spring-boot-2.5.x    |
 | 2.4                 | 2020.0.3 (aka Ilford) | spring-cloud-2020.0.3-spring-boot-2.4.x    |
@@ -17,6 +18,11 @@ This playground project contains a default setup including:
 
 ## Spring Cloud versions
 
+* Spring Cloud 2021.0.0
+  * code name: jubilee
+  * [Release notes](https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2021.0-Release-Notes#202100)
+  * [Blog](https://spring.io/blog/2021/12/02/spring-cloud-2021-0-0-codename-jubilee-has-been-released)
+  * Compatible with: Spring Boot 2.6.1 and later
 * Spring Cloud 2020.0.4
   * [Release notes](https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2020.0-Release-Notes#202004)
   * [Blog](https://spring.io/blog/2021/09/23/spring-cloud-2020-0-4-has-been-released)
