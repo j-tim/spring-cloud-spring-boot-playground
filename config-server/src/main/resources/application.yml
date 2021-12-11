@@ -24,3 +24,22 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${SPRING_CLOUD_EUREKA_URI:http://localhost:8761/eureka/}
+
+management:
+
+  # Expose default monitoring endpoints
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  # Since Spring Boot 2.6 the environment info contributor is disabled by default
+  # You have to enable is explicitly.
+  info:
+    env:
+      enabled: true
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: Spring Cloud Config server

@@ -5,7 +5,10 @@ spring:
   application:
     name: service-a
   config:
-    import: optional:configserver:http://localhost:8888
+    # Will cause the Config Client to fail if it is unable to connect to Config Server
+    import: "configserver:"
+    # To optionally connect to config server. This will connect to the Config Server at the default location of "http://localhost:8888"
+#    import: "optional:configserver:"
 
   cloud:
     config:

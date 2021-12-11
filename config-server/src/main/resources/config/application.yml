@@ -5,3 +5,14 @@ management:
     web:
       exposure:
         include: "*"
+
+  # Since Spring Boot 2.6 the environment info contributor is disabled by default
+  # You have to enable is explicitly.
+  info:
+    env:
+      enabled: true
+
+info:
+  application:
+    name: ${spring.application.name}
+
